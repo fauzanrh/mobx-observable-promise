@@ -369,6 +369,7 @@ export class ObservablePromise<T extends PromiseAction> {
         this.result = null;
         this.isExecuting = false;
         this.isError = false;
+        this.error = null
         this.wasExecuted = false;
         this._isWaitingForResponse = false;
         this._promise = null;
